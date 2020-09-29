@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Quiz</title>
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -12,14 +12,14 @@
         <div id="questionsBox" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn">
-                <button class="btn">A</button>
-                <button class="btn">B</button>
-                <button class="btn">C</button>
-                <button class="btn">D</button> 
+                <button class="btn btn-answer"></button>
+                <button class="btn btn-answer"></button>
+                <button class="btn btn-answer"></button>
+                <button class="btn btn-answer"></button> 
             </div>
         </div>
-        <button id="start-btn" class="start-btn btn">You ready?</button>
-        <button id = "next-btn" class ="next-btn btn hide">NEXT</button>
+        <button id="start-btn" class="start-btn btn hide">You ready?</button>
+        <button id = "next-btn" class ="next-btn btn">NEXT</button>
     </div>
     
 
@@ -27,29 +27,3 @@
 </body>
 </html>
 
-
-<!-- to make the html switch content on a page: -->
-<!-- <html>
-    <head>
-    <script>
-    function show(shown, hidden) {
-      document.getElementById(shown).style.display='block';
-      document.getElementById(hidden).style.display='none';
-      return false;
-    }
-    </script>
-    </head>
-    <body>
-    
-      <div id="Page1">
-        Content of page 1
-        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-      </div>
-    
-      <div id="Page2" style="display:none">
-        Content of page 2
-        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-      </div>
-    
-    </body>
-    </html> -->
