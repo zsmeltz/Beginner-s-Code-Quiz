@@ -7,21 +7,34 @@
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    
-    <div class="container">
-        <div id="questionsBox" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn">
-                <button class="btn btn-answer"></button>
-                <button class="btn btn-answer"></button>
-                <button class="btn btn-answer"></button>
-                <button class="btn btn-answer"></button> 
-            </div>
-        </div>
-        <button id="start-btn" class="start-btn btn hide">You ready?</button>
-        <button id = "next-btn" class ="next-btn btn">NEXT</button>
+    <div class = "timer">
+        <p id ="teller">Time left till demise:</p>
+        <p id="countdown"></p>
+    </div>
+    <div>
+        <a id="highscore" href="">View Highscores</a>
     </div>
     
+    <div class="container">
+        <div id="questionsBox">
+            <div id="question">Whenever you are ready...</div>
+            <hr>
+            <div id="answer-buttons" class="btn">
+                <button id = "buttonOne" class="btn btn-answer" style="visibility: hidden"></button>
+                <button id ="buttonTwo" class="btn btn-answer" style="visibility: hidden"></button>
+                <button id = "buttonThree" class="btn btn-answer" style="visibility: hidden"></button>
+                <button id = "buttonFour" class="btn btn-answer" style="visibility: hidden"></button> 
+            </div>
+        </div>
+        <button id="start-btn" class="start-btn">You ready?</button>
+        <button id = "next-btn" class ="next-btn btn" style="visibility: hidden">NEXT</button>
+    </div>
+    <form id="highscore-form" onSubmit="storeScore()" style="visibility: hidden">
+        <p id="your-score" style="visibility: hidden">Your score:</p>
+        <label for="initials">Put your initials here to save your score:</label>
+        <input type="text" id="initials" name="initials">
+        <input type="submit" value="Submit">
+    </form>
 
     <script src="quiz.js"></script>
 </body>

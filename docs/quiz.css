@@ -1,10 +1,22 @@
+#highscore{
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
+}
+
 body {
     display: flex;
     width: 100vw;
     height: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: slategrey whitesmoke;
+    background-image: url('background.jpg');
+    background-color: maroon;
 }
 
 .container{
@@ -14,8 +26,15 @@ body {
     border-radius: 5px;
     padding: 40px;
     height: 450px;
-    margin-top: -250px;
+    margin-top: -350px;
+    margin-left: 50px;
+    border: solid slategray;
+    border-radius: 15px;
     
+}
+hr{
+    color: grey;
+    opacity: 0.5;
 }
 
 #question{
@@ -41,24 +60,104 @@ body {
     float: center;
     margin: auto;
     margin-left: 230px;
-    font-size: 20px;
+    font-size: 13px;
     padding: 10px;
     overflow: auto;
     margin: 10px;
     box-shadow: 0 0 10px;
 }
+
 #start-btn{
-    padding: 13px;
-    float: left;
-    box-shadow: 0 0 5px;
+    padding: 30px;
+    margin-top: -100px;
+    margin-left: 220px;
+    position: relative;
+    float: center;
+    box-shadow: 0 0 10px;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#start-btn:hover{
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    text-shadow: 50px;
 }
 
 #next-btn{
     float: right;
     padding: 13px;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 10px;
+   
+}
+.timer{
+    background-color: black;
+    color: lime;
+    position: fixed;
+    border: solid lime;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    font-size: 15px;
+    top: 0;
+    right: 0px;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+    height: 100px;
+    box-shadow: 0px 0px 20px lime;
 }
 
-/* .hide{
-    display: none;
-} */
+#countdown{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+#teller{
+    text-decoration: underline;
+}
+
+
+
+
+
+#highscore-form{
+    position: absolute;
+    padding: 5px;
+    font-size: 25px;
+    color: goldenrod;
+    text-shadow: 0px 0px 5px black;
+}
+
+#your-score{
+    position: absolute;
+    text-align: center;
+    
+
+}
+
+
+@media screen and (max-width: 910px){
+    .container{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .container{
+        margin-top: 450px;
+        margin-left: -10;
+        width: 300px;
+        position: absolute;
+    }
+    #start-btn{
+        margin-left: 30px;
+    }
+    #highscore-form{
+        margin: 0 auto;
+        top: 340px;
+        left: 40px;
+    }
+    #your-score{
+        top: 70px;
+    }
+}
